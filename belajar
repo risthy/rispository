@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>
+        Belajar Membuat Website Statis dengan HTML5
+    </title>
+</head>
+<body>
+<h1>Belajar Dasar HTML5 </h1>
+<p>Hari ini saya pertama kali belajar membuat website statis di semester 5 
+    <br>
+    <h2>Risthy Aulia</h2>
+<p>Nama saya Risthy Aulia Putri Utami, saya dari semester 5 kelas B</p>
+<br>
+<h3>Ini Heading 3</h3>
+<h4>Ini Heading 4</h4>
+<h5>Ini Heading 5</h5>
+<h6>Ini Heading 6</h6>
+<br>
+<a href="https://uinjkt.ac.id">ini link uin jkt</a>
+<br>
+<img src="images/avatar-2.png" width="504" height="485">
+</body>
+
+
+
+</html>
