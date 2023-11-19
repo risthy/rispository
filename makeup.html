@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make Up Wardah</title>
+    <link rel="shortcut icon" href="images/logo-wardah.png" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Merriweather:ital,wght@0,300;0,900;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CSS-->
+    <script src="https://kit.fontawesome.com/79fa34a98c.js" crossorigin="anonymous"></script>
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="style-makeup.css"/>
+  </head>
+
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"><span>Wardah</span></a>
+
+      <div class="navbar-nav">
+        <a href="/laragon/www/UTS/index1.html#">Home</a>
+        <a href="/laragon/www/UTS/index1.html#about">Tentang Wardah</a>
+        <a href="/laragon/www/UTS/profil.html#profil">Profile Wardah</a>
+        <div class="product">
+          <button class="prdct">Produk Wardah</a>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="product-content">
+            <a href="/laragon/www/UTS/skincare.html#skincare">Skin Care</a>
+            <a href="/laragon/www/UTS/makeup.html#makeup">Make Up</a>
+            <a href="/laragon/www/UTS/bodycare.html#bodycare">Body Care</a>
+            <a href="/laragon/www/UTS/haircare.html#gallery">Hair Care</a>
+          </div>
+        </div>
+        <a href="/laragon/www/UTS/index1.html#contact">Kontak</a>
+      </div>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <button class="btnLogin-pop"><a href="/laragon/www/UTS/regist.html">Regist</a></button>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+          </div>
+
+      <!-- Search Form start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Search Form end -->
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+      <div class="mask-container">
+          <main class="content">
+      </main>
+  </section>
+    <!-- Hero Section end -->
+
+    <!-- About Section start -->
+     <section class="makeup" id="makeup">
+      <h2>Produk <i>Make Up </i><span>Wardah</span></h2>
+
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 7</div>
+        <img src="images/blushon.png" style="width: 50%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 7</div>
+        <img src="images/eyebrow.png" style="width: 50%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 7</div>
+        <img src="images/eyeshadow" style="width: 50%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 7</div>
+        <img src="images/lipbalm.png" style="width: 50%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 7</div>
+        <img src="images/foundation.png" style="width: 50%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 7</div>
+        <img src="images/loose-powder.png" style="width: 50%" />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 7</div>
+        <img src="images/eyeliner.png" style="width: 50%" />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="images/blushon.png"
+            style="width: 100%"
+            onclick="currentSlide(1)"
+            alt="COLORFIT CREAM BLUSH"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="images/eyebrow.png"
+            style="width: 100%"
+            onclick="currentSlide(2)"
+            alt="EYEXPERT LIFTLAST WATERPROOF MASCARA"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="images/eyeshadow"
+            style="width: 100%"
+            onclick="currentSlide(3)"
+            alt="COLORFIT QUAD EYE PALETTE SUNLIT BLAZE"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="images/lipbalm.png"
+            style="width: 100%"
+            onclick="currentSlide(4)"
+            alt="LIP BALM PICNIC LIMITED EDITION"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="images/foundation.png"
+            style="width: 100%"
+            onclick="currentSlide(5)"
+            alt="LIGHTENING LIQUID FOUNDATION 6ML"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="images/loose-powder.png"
+            style="width: 100%"
+            onclick="currentSlide(6)"
+            alt="COLORFIT MATTIFYING POWDER"
+          />
+        </div>
+      </div>
+    </div>
+     </section>
+
+   <!-- Footer start -->
+   <footer>
+    <div class="socials">
+      <a href="https://www.instagram.com/wardahbeauty/"><i data-feather="instagram"></i></a>
+      <a href="https://twitter.com/wardahbeauty"><i data-feather="twitter"></i></a>
+      <a href="https://www.facebook.com/wardahbeauty"><i data-feather="facebook"></i></a>
+      <a href="https://www.youtube.com/user/WardahBeauty"><i data-feather="youtube"></i></a>
+    </div>
+
+    <div class="links">
+      <a href="/laragon/www/UTS/index1.html#">Home</a>
+        <a href="/laragon/www/UTS/index1.html#about">Tentang Wardah</a>
+        <a href="/laragon/www/UTS/profil.html#profil">Profile Wardah</a>
+        <a href="/laragon/www/UTS/index1.html#contact">Contact</a>
+    </div>
+
+    <div class="credit">
+      <p>Source by <a href="https://www.wardahbeauty.com/">Wardah</a>. | &copy; 2023.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+  <!-- Feather Icons -->
+  <script>
+    feather.replace();
+  </script>
+
+  <!-- My Javascript -->
+  <script src="script-makeup.js"></script>
+</body>
+</html>
+  </body>
+</html>

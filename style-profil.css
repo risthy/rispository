@@ -1,0 +1,348 @@
+:root {
+  --primary: #058888;
+  --bg: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(images/bg-body1);
+  background-size: cover;
+  color: black;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #3df3c6;
+  background: none;
+  border-bottom: 1px solid rgb(40, 81, 72);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.navbar .navbar-logo {
+  font-family: "Merriweather", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #070707;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #070707;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra .btnLogin-pop {
+  width: 100px;
+  height: 30px;
+  background: #ddd8d8;
+  border: 2px solid black;
+  outline: none;
+  margin-top: 3px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.navbar .navbar-extra .btnLogin-pop:hover {
+  background: #ddd;
+  color: black;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+.product {
+  float: right;
+  overflow: hidden;
+}
+.product .prdct {
+  color: #070707;
+  display: inline-block;
+  background-color: inherit;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+
+.product .prdct:hover {
+  color: var(--primary);
+}
+
+.product .prdct::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.product .prdct:hover::after {
+  transform: scaleX(0.5);
+}
+
+.product-content {
+  display: none;
+  position: absolute;
+  background-color: #fd9292;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.product-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.product-content a:hover {
+  background-color: #ddd;
+}
+
+.product:hover .product-content {
+  display: block;
+}
+
+#hamburger-menu {
+  display: inline-block;
+}
+
+/* Navbar search form */
+.navbar .search-form {
+  position: absolute;
+  top: 100%;
+  right: 7%;
+  background-color: #fff;
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+
+.navbar .search-form.active {
+  transform: scaleY(1);
+}
+
+.navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: black;
+  padding: 1rem;
+}
+
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: black;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(images/slider-desktop-1698647336.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+}
+
+/* Profil Start*/
+.profile {
+  padding: 10rem 7% 1.4rem;
+}
+
+.profile h2 {
+  font-family: "monaco", monospace;
+  text-align: center;
+  font-size: 35px;
+  width: 1000px;
+  margin: auto;
+  border-style: double;
+  border-width: 5px;
+  border-color: rgb(5, 11, 88);
+}
+
+.profile h3 {
+  font-family: "monaco", monospace;
+  font-size: 20px;
+  padding: 10px;
+  width: 1000px;
+  margin: auto;
+  text-decoration: underline;
+}
+
+.profile p {
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+  font-size: 20px;
+  padding: 10px;
+  width: 900px;
+  margin: auto;
+}
+
+/* Filosofi */
+.filosofi {
+  padding: 2rem 7% 1.4rem;
+}
+
+.filosofi h2 {
+  color: rgb(219, 21, 97);
+  font-family: "monaco", monospace;
+  text-align: center;
+  font-size: 35px;
+  width: 1000px;
+  margin: auto;
+  border-style: double;
+  border-width: 5px;
+  border-color: rgb(107, 20, 53);
+}
+
+.konsep p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 30px;
+  margin: 30px auto;
+  padding: 20px;
+  width: 900px;
+}
+
+.konsep dt {
+  font-size: 20px;
+  background-color: palevioletred;
+  margin-top: 0;
+  padding: 5px;
+  width: 900px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.konsep dd {
+  background-color: pink;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  text-indent: 40px;
+  text-align: justify;
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 900px;
+  margin: 30px auto;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+  margin: 0;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .link a:hover {
+  color: #010101;
+}
+footer .link {
+  margin-bottom: 1.4rem;
+}
+
+footer .link a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+}
+
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}

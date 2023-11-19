@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrasi</title>
+    <link rel="shortcut icon" href="images/logo-wardah.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Merriweather:ital,wght@0,300;0,900;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CSS-->
+    <script src="https://kit.fontawesome.com/79fa34a98c.js" crossorigin="anonymous"></script>
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="style-regist.css"/>
+  </head>
+
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"><span>Wardah</span></a>
+
+      <div class="navbar-nav">
+        <a href="/laragon/www/UTS/index1.html#">Home</a>
+        <a href="/laragon/www/UTS/index1.html#about">Tentang Wardah</a>
+        <a href="/laragon/www/UTS/profil.html#profil">Profile Wardah</a>
+        <div class="product">
+          <button class="prdct">Produk Wardah</a>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="product-content">
+            <a href="/laragon/www/UTS/skincare.html#skincare">Skin Care</a>
+            <a href="/laragon/www/UTS/makeup.html#makeup">Make Up</a>
+            <a href="/laragon/www/UTS/bodycare.html#bodycare">Body Care</a>
+            <a href="/laragon/www/UTS/haircare.html#gallery">Hair Care</a>
+          </div>
+        </div>
+        <a href="/laragon/www/UTS/index1.html#contact">Kontak</a>
+      </div>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <button class="btnLogin-pop"><a href="/laragon/www/UTS/regist.html">Regist</button>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- Search Form start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Search Form end -->
+
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Form -->
+    <section class="home">
+      <div class="form-container">
+        <i class="fa-regular fa-circle-xmark"></i>
+        <!-- Login Form -->
+        <div class="form register_form">
+          <form action="#">
+            <h2>Registration</h2>
+
+            <div class="input_box">
+              <input type="uname" placeholder="Username" required />
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input_box">
+              <input type="email" placeholder="Email" required />
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Password" required/>
+              <i class="fa-solid fa-lock"></i>
+              <i class="fa-regular fa-eye-slash"></i>
+            </div>
+
+            <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check">
+                <label for="check">agree to the terms & conditions</label>
+              </span>
+            </div>
+
+            <div class="field button-field">
+              <button>Register</button>
+            </div>
+            
+          </form>
+        </div>
+        </div>
+    </section>
+      
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+        <div class="mask-container">
+            <main class="content">
+        </main>
+    </section>
+      
+    <!-- Hero Section end -->
+
+<!-- Footer start -->
+<footer>
+    <div class="socials">
+      <a href="https://www.instagram.com/wardahbeauty/"><i data-feather="instagram"></i></a>
+      <a href="https://twitter.com/wardahbeauty"><i data-feather="twitter"></i></a>
+      <a href="https://www.facebook.com/wardahbeauty"><i data-feather="facebook"></i></a>
+      <a href="https://www.youtube.com/user/WardahBeauty"><i data-feather="youtube"></i></a>
+    </div>
+
+    <div class="links">
+      <a href="/laragon/www/UTS/index1.html#">Home</a>
+      <a href="/laragon/www/UTS/index1.html#about">Tentang Wardah</a>
+      <a href="/laragon/www/UTS/profil.html#profil">Profile Wardah</a>
+      <a href="/laragon/www/UTS/index1.html#contact">Contact</a>
+    </div>
+
+    <div class="credit">
+      <p>Source by <a href="https://www.wardahbeauty.com/">Wardah</a>. | &copy; 2023.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+  <!-- Feather Icons -->
+  <script>
+    feather.replace();
+  </script>
+
+  <!-- My Javascript -->
+  <script src="script-regist.js"></script>
+</body>
+</html>
